@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/logo_callora.jpg" />
+    <link rel="apple-touch-icon" href="/logo_callora.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#2f8eff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)" />
+    <title>Callora AI | AI Voice Receptionist for Modern Businesses</title>
+    <meta
+      name="description"
+      content="Callora AI is a premium AI voice assistant that answers calls 24/7, books appointments automatically, qualifies leads and helps businesses never miss another customer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Callora AI | AI Voice Receptionist for Modern Businesses" />
+    <meta
+      property="og:description"
+      content="Callora AI is a premium AI voice assistant that answers calls 24/7, books appointments automatically, qualifies leads and helps businesses never miss another customer."
+    />
+    <meta property="og:image" content="/logo_callora.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Callora AI | AI Voice Receptionist for Modern Businesses" />
+    <meta
+      name="twitter:description"
+      content="Callora AI is a premium AI voice assistant that answers calls 24/7, books appointments automatically, qualifies leads and helps businesses never miss another customer."
+    />
+    <meta name="twitter:image" content="/logo_callora.jpg" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('callora-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var dark = stored ? stored === 'dark' : prefersDark;
+          if (dark) document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
